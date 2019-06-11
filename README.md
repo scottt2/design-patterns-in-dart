@@ -18,11 +18,11 @@ Here are the implementations of the following design patterns in Dart:
 
 ### Creational
 
-* [ ] [Singleton](https://github.com/scottt2/design-patterns-in-dart/tree/master/singleton)
 * [ ] [Abstract Factory](https://github.com/scottt2/design-patterns-in-dart/tree/master/abstract_factory)
+* [x] [Builder](https://github.com/scottt2/design-patterns-in-dart/tree/master/builder)
 * [ ] [Factory Method](https://github.com/scottt2/design-patterns-in-dart/tree/master/factory_method)
-* [ ] [Builder](https://github.com/scottt2/design-patterns-in-dart/tree/master/builder)
 * [ ] [Prototype](https://github.com/scottt2/design-patterns-in-dart/tree/master/prototype)
+* [ ] [Singleton](https://github.com/scottt2/design-patterns-in-dart/tree/master/singleton)
 
 ### Structural Patterns
 
