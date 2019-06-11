@@ -77,8 +77,9 @@ void main() {
   pizzaBuilder.toppings = Set.from(["anchovies", "caviar", "diamonds"]);
 
   // The beauty of the build is you can quickly iterate and produce instances of a class.
-  // For example, we have an early employee of the latest unicorn in line...
-  var luxuriousPizza = Pizza(pizzaBuilder);
+  // For example, we have an early employee of the latest unicorn in line. So much disposale income!
+  // Also note, we use the .build() function of the builder this time.
+  var luxuriousPizza = pizzaBuilder.build();
   print("Wow! $luxuriousPizza? Someone is rich!");
   assert(luxuriousPizza.toString() == "Wow! A delicous 72\" pizza with gold plated crust covered in anchovies, caviar, diamonds, and cheese? Someone is rich!");
 }
