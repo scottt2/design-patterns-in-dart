@@ -1,4 +1,36 @@
-# Adapter Pattern
-An adapter allows two incompatible interfaces to work together. This is the real-world definition for an adapter. Interfaces may be incompatible, but the inner functionality should suit the need. The adapter design pattern allows otherwise incompatible classes to work together by converting the interface of one class into an interface expected by the clients.
+# Design Patterns in Dart
 
-[Wikipedia: Adapter Pattern](https://en.wikipedia.org/wiki/Adapter_pattern)
+Here are the implementations of the following design patterns in Dart:
+
+### Behavioral Patterns
+
+* [ ] [Chain of Responsibility](https://github.com/scottt2/design-patterns-in-dart/tree/master/chain_of_responsibility)
+* [ ] [Command](https://github.com/scottt2/design-patterns-in-dart/tree/master/command)
+* [ ] [Interpreter](https://github.com/scottt2/design-patterns-in-dart/tree/master/interpreter)
+* [ ] [Iterator](https://github.com/scottt2/design-patterns-in-dart/tree/master/iterator)
+* [ ] [Mediator](https://github.com/scottt2/design-patterns-in-dart/tree/master/mediator)
+* [ ] [Memento](https://github.com/scottt2/design-patterns-in-dart/tree/master/memento)
+* [ ] [Observer](https://github.com/scottt2/design-patterns-in-dart/tree/master/observer)
+* [ ] [State](https://github.com/scottt2/design-patterns-in-dart/tree/master/state)
+* [ ] [Strategy](https://github.com/scottt2/design-patterns-in-dart/tree/master/strategy)
+* [ ] [Template Method](https://github.com/scottt2/design-patterns-in-dart/tree/master/template_method)
+* [ ] [Visitor](https://github.com/scottt2/design-patterns-in-dart/tree/master/visitor)
+
+### Creational
+
+* [ ] [Singleton](https://github.com/scottt2/design-patterns-in-dart/tree/master/singleton)
+* [ ] [Abstract Factory](https://github.com/scottt2/design-patterns-in-dart/tree/master/abstract_factory)
+* [ ] [Factory Method](https://github.com/scottt2/design-patterns-in-dart/tree/master/factory_method)
+* [ ] [Builder](https://github.com/scottt2/design-patterns-in-dart/tree/master/builder)
+* [ ] [Prototype](https://github.com/scottt2/design-patterns-in-dart/tree/master/prototype)
+
+### Structural Patterns
+
+* [x] [Adapter](https://github.com/scottt2/design-patterns-in-dart/tree/master/adapter)
+* [ ] [Bridge](https://github.com/scottt2/design-patterns-in-dart/tree/master/bridge)
+* [ ] [Composite](https://github.com/scottt2/design-patterns-in-dart/tree/master/composite)
+* [ ] [Decorator](https://github.com/scottt2/design-patterns-in-dart/tree/master/decorator)
+* [ ] [Facade](https://github.com/scottt2/design-patterns-in-dart/tree/master/facade)
+* [ ] [Flyweight](https://github.com/scottt2/design-patterns-in-dart/tree/master/flyweight)
+* [ ] [Proxy](https://github.com/scottt2/design-patterns-in-dart/tree/master/proxy)
+
