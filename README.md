@@ -48,7 +48,7 @@ To run the example, make sure you [have Dart installed](https://dart.dev/get-dar
 ```
 dart <example directory>/<example name>.dart
 ```
-Take State, for example:
+Take [State](https://github.com/scottt2/design-patterns-in-dart/tree/master/state), for example:
 ```
 > dart state/state.dart
 
