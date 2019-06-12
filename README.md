@@ -32,5 +32,5 @@ Here are the implementations of the following design patterns in Dart:
 * [ ] [Decorator](https://github.com/scottt2/design-patterns-in-dart/tree/master/decorator)
 * [x] [Facade](https://github.com/scottt2/design-patterns-in-dart/tree/master/facade)
 * [ ] [Flyweight](https://github.com/scottt2/design-patterns-in-dart/tree/master/flyweight)
-* [ ] [Proxy](https://github.com/scottt2/design-patterns-in-dart/tree/master/proxy)
+* [x] [Proxy](https://github.com/scottt2/design-patterns-in-dart/tree/master/proxy)
 
