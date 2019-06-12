@@ -30,7 +30,7 @@ Here are the implementations of the following design patterns in Dart:
 * [ ] [Bridge](https://github.com/scottt2/design-patterns-in-dart/tree/master/bridge)
 * [ ] [Composite](https://github.com/scottt2/design-patterns-in-dart/tree/master/composite)
 * [ ] [Decorator](https://github.com/scottt2/design-patterns-in-dart/tree/master/decorator)
-* [ ] [Facade](https://github.com/scottt2/design-patterns-in-dart/tree/master/facade)
+* [x] [Facade](https://github.com/scottt2/design-patterns-in-dart/tree/master/facade)
 * [ ] [Flyweight](https://github.com/scottt2/design-patterns-in-dart/tree/master/flyweight)
 * [ ] [Proxy](https://github.com/scottt2/design-patterns-in-dart/tree/master/proxy)
 
