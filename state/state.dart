@@ -15,7 +15,7 @@ class StatusOn implements State {
 }
 
 class StatusOff implements State {
-	handler(Stateful context) {
+  handler(Stateful context) {
     print("  Handler of StatusOff is being called!");
     context.state = StatusOn();
   }
