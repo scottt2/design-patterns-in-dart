@@ -11,7 +11,7 @@ Here are the implementations of the following design patterns in Dart:
 * [ ] [Mediator](https://github.com/scottt2/design-patterns-in-dart/tree/master/mediator)
 * [ ] [Memento](https://github.com/scottt2/design-patterns-in-dart/tree/master/memento)
 * [ ] [Observer](https://github.com/scottt2/design-patterns-in-dart/tree/master/observer)
-* [ ] [State](https://github.com/scottt2/design-patterns-in-dart/tree/master/state)
+* [x] [State](https://github.com/scottt2/design-patterns-in-dart/tree/master/state)
 * [ ] [Strategy](https://github.com/scottt2/design-patterns-in-dart/tree/master/strategy)
 * [ ] [Template Method](https://github.com/scottt2/design-patterns-in-dart/tree/master/template_method)
 * [ ] [Visitor](https://github.com/scottt2/design-patterns-in-dart/tree/master/visitor)
