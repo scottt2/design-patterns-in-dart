@@ -1,6 +1,13 @@
 # Design Patterns in Dart
 
-Here are the implementations of the following design patterns in Dart:
+Welcome! The intent of this repo is to provide
+
+1. Examples for each for each of the [23 Gang of Four design patterns](https://en.wikipedia.org/wiki/Design_Patterns)
+2. An introduction to the [Dart programming language](https://dart.dev/)
+
+Please see [Getting Started](#getting-started) for more information on how to run the examples.
+
+## Table of Contents
 
 ### Behavioral Patterns
 
@@ -33,4 +40,29 @@ Here are the implementations of the following design patterns in Dart:
 * [x] [Facade](https://github.com/scottt2/design-patterns-in-dart/tree/master/facade)
 * [ ] [Flyweight](https://github.com/scottt2/design-patterns-in-dart/tree/master/flyweight)
 * [x] [Proxy](https://github.com/scottt2/design-patterns-in-dart/tree/master/proxy)
+
+## Getting Started
+
+Each example has its own directory, inside which is a short readme and a sole Dart file.
+To run the example, make sure you [have Dart installed](https://dart.dev/get-dart) and then just do
+```
+dart <example directory>/<example name>.dart
+```
+Take State, for example:
+```
+> dart state/state.dart
+
+The light switch is off.
+Toggling the light switch...
+  Touching the Stateful...
+  Handler of StatusOff is being called!
+The light switch is on.
+```
+
+If you have any questions or see any issues, please feel free to [file an issue](https://github.com/scottt2/design-patterns-in-dart/issues/new).
+
+Enjoy!
+
+-Tyler
+
 
