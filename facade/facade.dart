@@ -36,7 +36,7 @@ class Imbiber {
   }
 }
 
-class MorningFascade {
+class MorningFacade {
   final _coffeeDrinker = Imbiber("coffee");
   final _coffeeGrinder = Grinder("coffee beans");
   final _coffeeMaker = Maker("coffee");
@@ -59,7 +59,7 @@ class MorningFascade {
 }
 
 void main() {
-  var typicalMorning = MorningFascade();
+  var typicalMorning = MorningFacade();
 
   print("Wake up! Grab a brush and put on a little makeup...");
   print("\r\nStumble to the kitchen...");
