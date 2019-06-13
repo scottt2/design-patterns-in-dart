@@ -12,7 +12,6 @@ class ExpensiveClass implements Subject {
   }
 }
 
-
 class Proxy implements Subject {
   String _name;
   ExpensiveClass _sub;
