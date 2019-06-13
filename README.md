@@ -27,7 +27,7 @@ Please see [Getting Started](#getting-started) for more information on how to ru
 
 * [ ] [Abstract Factory](https://github.com/scottt2/design-patterns-in-dart/tree/master/abstract_factory)
 * [x] [Builder](https://github.com/scottt2/design-patterns-in-dart/tree/master/builder)
-* [ ] [Factory Method](https://github.com/scottt2/design-patterns-in-dart/tree/master/factory_method)
+* [x] [Factory Method](https://github.com/scottt2/design-patterns-in-dart/tree/master/factory_method)
 * [ ] [Prototype](https://github.com/scottt2/design-patterns-in-dart/tree/master/prototype)
 * [ ] [Singleton](https://github.com/scottt2/design-patterns-in-dart/tree/master/singleton)
 
