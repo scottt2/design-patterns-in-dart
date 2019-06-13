@@ -33,11 +33,11 @@ class CoffeeVesselFactory {
   static Vessel vesselFor(Tiredness howTired) {
     Vessel vessel;
     switch(howTired) {
-      case Tiredness.rested: vessel = Cup(100, "milliliters"); break;
+      case Tiredness.rested: vessel = Cup(100, "milliliter"); break;
       case Tiredness.sleepy:
-      case Tiredness.barelyAlive: vessel = Cup(500, "milliliters"); break;
-      case Tiredness.hasChildren: vessel = Bucket(5, "liters"); break;
-      default: vessel = Cup(200, "milliliters"); break;
+      case Tiredness.barelyAlive: vessel = Cup(500, "milliliter"); break;
+      case Tiredness.hasChildren: vessel = Bucket(5, "liter"); break;
+      default: vessel = Cup(200, "milliliter"); break;
     }
     vessel.liquid = "coffee";
     return vessel;
