@@ -50,4 +50,27 @@ void main() {
   compositeParent.addChild(compositeChild2);
 
   compositeParent.doSomething();
+
+  /*
+   ** Cat in the Hat is doing something! **
+
+
+    ** Thing 1 is doing something! **
+
+    *  Frustrate fish!
+    *  Knock down vases!
+
+    ** Thing 1 is all done. **
+
+
+    ** Thing 2 is doing something! **
+
+    *  Ruin mom's dress!
+    *  Clean up!
+
+    ** Thing 2 is all done. **
+
+
+    ** Cat in the Hat is all done. **
+  */
 }
