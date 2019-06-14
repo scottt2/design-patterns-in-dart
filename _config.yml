@@ -1,3 +1,4 @@
+header_pages: []
 plugins:
   - jekyll-seo-tag
 theme: minima
