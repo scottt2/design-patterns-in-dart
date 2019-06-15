@@ -9,6 +9,10 @@ The facade pattern is typically used when:
 
 [Wikipedia: Facade Pattern](https://en.wikipedia.org/wiki/Facade_pattern)
 
+---
+
+[View on GitHub](https://github.com/scottt2/design-patterns-in-dart/tree/master/facade)
+
 ```dart
 class Grinder {
   String _type;
