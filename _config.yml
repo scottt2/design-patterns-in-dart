@@ -1,10 +1,3 @@
-header_pages: []
-highlighter: rouge
-kramdown:
-  hard_wrap: false
-  input: GFM
-  syntax_highlighter: rouge
-markdown: kramdown
 plugins:
   - jekyll-seo-tag
 theme: minima
