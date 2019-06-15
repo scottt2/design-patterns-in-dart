@@ -85,7 +85,7 @@
     }
     margin-left: 20px;
   }
-/*
+
   @media screen and (min-width: $on-medium) {
     position: static;
     float: right;
@@ -101,7 +101,8 @@
     }
 
     input ~ .trigger {
-      display: block;
+      //display: block;
+      display: none;
     }
 
     .page-link {
@@ -115,7 +116,7 @@
     }
   }
 }
-*/
+
 
 
 /**
