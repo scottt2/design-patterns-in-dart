@@ -9,7 +9,9 @@ The facade pattern is typically used when:
 
 [Wikipedia: Facade Pattern](https://en.wikipedia.org/wiki/Facade_pattern)
 
-```
+---
+
+```dart
 class Grinder {
   String _type;
 
@@ -84,4 +86,3 @@ void main() {
 
   print("\r\nI'm ready to attack the day!");
 }
-```
