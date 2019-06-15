@@ -11,7 +11,7 @@ The facade pattern is typically used when:
 
 ---
 
-```dart
+```
 class Grinder {
   String _type;
 
