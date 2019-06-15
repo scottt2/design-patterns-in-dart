@@ -12,7 +12,6 @@ The facade pattern is typically used when:
 ### Example
 
 [View on GitHub](https://github.com/scottt2/design-patterns-in-dart/tree/master/facade)
-test
 
 ```dart
 class Grinder {
