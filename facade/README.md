@@ -1,4 +1,4 @@
-# Facade Pattern
+## Facade Pattern
 The facade pattern (also spelled façade) is a software-design pattern commonly used in object-oriented programming. Analogous to a facade in architecture, a facade is an object that serves as a front-facing interface masking more complex underlying or structural code.
 
 The facade pattern is typically used when:
@@ -9,9 +9,10 @@ The facade pattern is typically used when:
 
 [Wikipedia: Facade Pattern](https://en.wikipedia.org/wiki/Facade_pattern)
 
-## Example
+### Example
 
 [View on GitHub](https://github.com/scottt2/design-patterns-in-dart/tree/master/facade)
+test
 
 ```dart
 class Grinder {
