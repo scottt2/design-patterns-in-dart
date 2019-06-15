@@ -13,7 +13,7 @@ Please see [Getting Started](#getting-started) for more information on how to ru
 
 * [ ] [Chain of Responsibility](https://github.com/scottt2/design-patterns-in-dart/tree/master/chain_of_responsibility)
 * [ ] [Command](https://github.com/scottt2/design-patterns-in-dart/tree/master/command)
-* [ ] [Interpreter](https://github.com/scottt2/design-patterns-in-dart/tree/master/interpreter)
+* [x] [Interpreter](https://github.com/scottt2/design-patterns-in-dart/tree/master/interpreter)
 * [ ] [Iterator](https://github.com/scottt2/design-patterns-in-dart/tree/master/iterator)
 * [ ] [Mediator](https://github.com/scottt2/design-patterns-in-dart/tree/master/mediator)
 * [ ] [Memento](https://github.com/scottt2/design-patterns-in-dart/tree/master/memento)
