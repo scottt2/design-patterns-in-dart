@@ -29,7 +29,7 @@ Please see [Getting Started](#getting-started) for more information on how to ru
 * [x] [Builder](https://github.com/scottt2/design-patterns-in-dart/tree/master/builder)
 * [x] [Factory Method](https://github.com/scottt2/design-patterns-in-dart/tree/master/factory_method)
 * [ ] [Prototype](https://github.com/scottt2/design-patterns-in-dart/tree/master/prototype)
-* [ ] [Singleton](https://github.com/scottt2/design-patterns-in-dart/tree/master/singleton)
+* [x] [Singleton](https://github.com/scottt2/design-patterns-in-dart/tree/master/singleton)
 
 ### Structural Patterns
 
