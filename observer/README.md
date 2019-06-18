@@ -7,7 +7,7 @@ The observer pattern is also a key part in the familiar model–view–controlle
 
 [Wikipedia: Observer Pattner](https://en.wikipedia.org/wiki/Observer_pattern)
 
-### EWxample
+### Example
 
 [View on GitHub](https://github.com/scottt2/design-patterns-in-dart/tree/master/observer)
 
