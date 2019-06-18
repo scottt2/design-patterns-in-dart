@@ -17,7 +17,7 @@ Please see [Getting Started](#getting-started) for more information on how to ru
 * [ ] [Iterator](https://github.com/scottt2/design-patterns-in-dart/tree/master/iterator)
 * [ ] [Mediator](https://github.com/scottt2/design-patterns-in-dart/tree/master/mediator)
 * [ ] [Memento](https://github.com/scottt2/design-patterns-in-dart/tree/master/memento)
-* [ ] [Observer](https://github.com/scottt2/design-patterns-in-dart/tree/master/observer)
+* [x] [Observer](https://github.com/scottt2/design-patterns-in-dart/tree/master/observer)
 * [x] [State](https://github.com/scottt2/design-patterns-in-dart/tree/master/state)
 * [ ] [Strategy](https://github.com/scottt2/design-patterns-in-dart/tree/master/strategy)
 * [ ] [Template Method](https://github.com/scottt2/design-patterns-in-dart/tree/master/template_method)
