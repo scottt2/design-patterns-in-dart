@@ -12,7 +12,7 @@ Please see [Getting Started](#getting-started) for more information on how to ru
 ### Behavioral Patterns
 
 * [x] [Chain of Responsibility](https://github.com/scottt2/design-patterns-in-dart/tree/master/chain_of_responsibility)
-* [ ] [Command](https://github.com/scottt2/design-patterns-in-dart/tree/master/command)
+* [x] [Command](https://github.com/scottt2/design-patterns-in-dart/tree/master/command)
 * [x] [Interpreter](https://github.com/scottt2/design-patterns-in-dart/tree/master/interpreter)
 * [ ] [Iterator](https://github.com/scottt2/design-patterns-in-dart/tree/master/iterator)
 * [ ] [Mediator](https://github.com/scottt2/design-patterns-in-dart/tree/master/mediator)
