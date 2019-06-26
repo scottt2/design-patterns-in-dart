@@ -68,6 +68,8 @@ class Document {
     sentences[sentenceKey].addLetter(l);
     lettersWritten++;
   }
+
+  int get lettersCreated => letterFactory.lettersCreated;
 }
 
 void main() {
@@ -100,6 +102,9 @@ void main() {
 
   doc.export();
 
+  print("\r\nDocument wrote: ${doc.lettersWritten}.");
+  print("Letters created: ${doc.lettersCreated}.");
+
   /*
     All
     your
@@ -108,6 +113,9 @@ void main() {
     belong
     to
     us
+
+    Document wrote: 24.
+    Letters created: 13.
   */
 }
-```
+
