@@ -38,7 +38,7 @@ Please see [Getting Started](#getting-started) for more information on how to ru
 * [x] [Composite](https://github.com/scottt2/design-patterns-in-dart/tree/master/composite)
 * [x] [Decorator](https://github.com/scottt2/design-patterns-in-dart/tree/master/decorator)
 * [x] [Facade](https://github.com/scottt2/design-patterns-in-dart/tree/master/facade)
-* [ ] [Flyweight](https://github.com/scottt2/design-patterns-in-dart/tree/master/flyweight)
+* [x] [Flyweight](https://github.com/scottt2/design-patterns-in-dart/tree/master/flyweight)
 * [x] [Proxy](https://github.com/scottt2/design-patterns-in-dart/tree/master/proxy)
 
 ## Getting Started
