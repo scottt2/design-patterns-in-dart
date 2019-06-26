@@ -37,6 +37,7 @@ class Body implements BodyPart {
     for (var bodyPart in bodyParts) {
       bodyPart.accept(visitor);
     }
+    visitor.visit(this);
   }
 }
 
@@ -70,12 +71,14 @@ void main() {
     Gluing on my Left Foot.
     Gluing on my Right Foot.
     Gluing on my Third Foot?.
+    Reanimating my Body.
     Prodding Face.
     Pricking Index Finger.
     Pricking Thumb.
     Tickling Left Foot.
     Tickling Right Foot.
     Tickling Third Foot?.
+    Poking my Body with an electrode.
   */
 }
 
