@@ -34,7 +34,7 @@ Please see [Getting Started](#getting-started) for more information on how to ru
 ### Structural Patterns
 
 * [x] [Adapter](https://github.com/scottt2/design-patterns-in-dart/tree/master/adapter)
-* [ ] [Bridge](https://github.com/scottt2/design-patterns-in-dart/tree/master/bridge)
+* [x] [Bridge](https://github.com/scottt2/design-patterns-in-dart/tree/master/bridge)
 * [x] [Composite](https://github.com/scottt2/design-patterns-in-dart/tree/master/composite)
 * [x] [Decorator](https://github.com/scottt2/design-patterns-in-dart/tree/master/decorator)
 * [x] [Facade](https://github.com/scottt2/design-patterns-in-dart/tree/master/facade)
