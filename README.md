@@ -2,7 +2,7 @@
 
 Welcome! The intent of this repo is to provide
 
-1. Examples for each for each of the [23 Gang of Four design patterns](https://en.wikipedia.org/wiki/Design_Patterns)
+1. Examples for each of the [23 Gang of Four design patterns](https://en.wikipedia.org/wiki/Design_Patterns)
 2. An introduction to the [Dart programming language](https://dart.dev/)
 
 Please see [Getting Started](#getting-started) for more information on how to run the examples.
