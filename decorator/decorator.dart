@@ -10,7 +10,7 @@ class Ingredient {
   Ingredient(this.name, this.cost);
 
   @override
-  String toString() => this.name;
+  String toString() => name;
 }
 
 var coffee = Ingredient("coffee", .25);
@@ -18,21 +18,31 @@ var milk = Ingredient("milk", .5);
 var sugar = Ingredient("sugar", .1);
 
 class Coffee implements Beverage {
-  Set<Ingredient> _ingredients = Set.from([coffee, milk, sugar]);
-  double get cost => _ingredients.fold(0, (total, i) => total + i.cost);
-  String get ingredients {
-    var stringIngredients = _ingredients.fold("", (str, i) => str + "${i.name}, ");
-    var trimmedString = stringIngredients.substring(0, stringIngredients.length - 2);
-    var lastComma = trimmedString.lastIndexOf(",");
-    var replacement = ",".allMatches(trimmedString).length > 1 ? ", and" : " and";
+  final Set<Ingredient> _ingredients = {coffee, milk, sugar};
 
-    return trimmedString.replaceRange(lastComma, lastComma + 1, replacement);
+  @override
+  double get cost => _ingredients.fold(0, (total, ingredient) => total + ingredient.cost);
+
+  @override
+  String get ingredients {
+    var stringIngredients = _ingredients.fold<String>("", (total, ingredient) {
+      if (_ingredients.last.name == ingredient.name) {
+        return total + "and ${ingredient.name}";
+      }
+      return total + "${ingredient.name}, ";
+    });
+
+    return stringIngredients;
   }
 }
 
 class StarbucksCoffeeDecorator implements Beverage {
-  Beverage _coffee = Coffee();
+  final Beverage _coffee = Coffee();
+  
+  @override
   double get cost => _coffee.cost * 5;
+  
+  @override
   String get ingredients => _coffee.ingredients;
 }
 
@@ -46,4 +56,3 @@ void main() {
   // Coffee contains coffee, milk, and sugar. It costs $0.85
   // Starbucks coffee contains coffee, milk, and sugar. It costs $4.25
 }
-
