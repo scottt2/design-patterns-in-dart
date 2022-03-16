@@ -5,7 +5,7 @@ When a class varies often, the features of object-oriented programming become ve
 
 When there is only one fixed implementation, this pattern is known as the Pimpl idiom in the C++ world.
 
-The bridge pattern is often confused with the adapter pattern, and is often implemented using the object adapter pattern, e.g. in the Java code below.
+The bridge pattern is often confused with the adapter pattern, and is often implemented using the object adapter pattern.
 
 Variant: The implementation can be decoupled even more by deferring the presence of the implementation to the point where the abstraction is utilized.
 
