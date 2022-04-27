@@ -1,16 +1,16 @@
 abstract class Shape {
-  int x;
-  int y;
+  late int x;
+  late int y;
   Shape clone();
 }
 
 class Rectangle implements Shape {
-  int height;
-  int width;
-  int x;
-  int y;
+  late int height;
+  late int width;
+  late int x;
+  late int y;
 
-  int _hashCode;
+  late int _hashCode;
   bool isClone = false;
   String get cloneStatus => isClone ? "is a clone" : "is an original gangster";
 
@@ -32,7 +32,6 @@ class Rectangle implements Shape {
 
   @override
   int get hashCode {
-    if (_hashCode != null) return _hashCode;
     _hashCode = DateTime.now().millisecondsSinceEpoch;
     return _hashCode;
   }

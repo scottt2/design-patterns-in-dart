@@ -3,7 +3,7 @@ abstract class Subject {
 }
 
 class ExpensiveClass implements Subject {
-  String name;
+  late String name;
 
   ExpensiveClass(this.name);
 
@@ -13,8 +13,8 @@ class ExpensiveClass implements Subject {
 }
 
 class Proxy implements Subject {
-  String _name;
-  ExpensiveClass _sub;
+  late String _name;
+  late ExpensiveClass _sub;
 
   Proxy(this._name);
 
@@ -24,7 +24,6 @@ class Proxy implements Subject {
   }
 
   ExpensiveClass _subject() {
-    if (_sub != null) return _sub;
     print("Creating an instance of ExpensiveClass for the proxy...");
     _sub = ExpensiveClass(_name);
     return _sub;
