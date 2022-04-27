@@ -1,7 +1,7 @@
 import "dart:collection";
 
 class Letter {
-  String letter;
+  late String letter;
   Letter(String l) {
     if (l.length != 1) {
       throw new Exception("Can only be a single letter");
@@ -14,8 +14,8 @@ class Letter {
 }
 
 class Sentence {
-  List<Letter> letters = [];
-  void addLetter(Letter letter) => letters.add(letter);
+  List<Letter?> letters = [];
+  void addLetter(Letter ?letter) => letters.add(letter);
 
   @override
   String toString() => letters.join("");
@@ -24,7 +24,7 @@ class Sentence {
 class LetterFactory {
   Map<String, Letter> letters = {};
 
-  Letter fetchLetter(String l) {
+  Letter? fetchLetter(String l) {
     if (letters.containsKey(l)) {
       return letters[l];
     }
@@ -37,9 +37,9 @@ class LetterFactory {
 }
 
 class Document {
-  LetterFactory letterFactory = LetterFactory();
-  int lettersWritten = 0;
-  SplayTreeMap<int, Sentence> sentences;
+  late LetterFactory letterFactory = LetterFactory();
+  late int lettersWritten = 0;
+  late SplayTreeMap<int, Sentence> sentences;
 
   Document() {
     sentences = new SplayTreeMap<int, Sentence>();
@@ -53,7 +53,7 @@ class Document {
     }
 
     var l = letterFactory.fetchLetter(letterString);
-    sentences[sentenceKey].addLetter(l);
+    sentences[sentenceKey]?.addLetter(l);
     lettersWritten++;
   }
 
