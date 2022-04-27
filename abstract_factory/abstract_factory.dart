@@ -32,7 +32,7 @@ class CoffeeShop implements DrinkFactory {
 
 void main() {
   var mood = "sleepy";
-  DrinkFactory destination;
+  late DrinkFactory destination;
 
   switch (mood) {
     case "sleepy":

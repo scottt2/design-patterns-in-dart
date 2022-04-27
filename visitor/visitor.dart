@@ -1,5 +1,5 @@
 abstract class BodyPart {
-  String name;
+  late String name;
   void accept(BodyPartVisitor visitor) => visitor.visit(this);
 }
 
@@ -23,7 +23,7 @@ class Foot extends BodyPart {
 
 class Body implements BodyPart {
   String name = "Body";
-  List<BodyPart> bodyParts;
+  late List<BodyPart> bodyParts;
 
   Body() {
     bodyParts = List.from([

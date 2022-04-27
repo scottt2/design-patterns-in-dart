@@ -1,5 +1,5 @@
 class Memento {
-  String _state;
+  late String _state;
 
   Memento(String s) {
     _state = s;
@@ -13,7 +13,7 @@ class Memento {
 }
 
 class Originator {
-  String _state;
+  late String _state;
 
   // NOTE: This uses the state setter on init to get a handy print
   Originator(String s) {
@@ -39,7 +39,7 @@ class Originator {
 }
 
 class CareTaker {
-  Memento memento;
+  late Memento memento;
 }
 
 void main() {

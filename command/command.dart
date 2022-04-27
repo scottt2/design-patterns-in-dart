@@ -3,8 +3,8 @@ abstract class Receiver {
 }
 
 abstract class Command {
-  Receiver receiver;
-  String name;
+  late Receiver receiver;
+  late String name;
 
   Command(this.receiver);
 

@@ -1,7 +1,7 @@
 class PizzaBuilder {
-  String _crust;
-  int _diameter;
-  Set<String> _toppings;
+  late String _crust;
+  late int _diameter;
+  late Set<String> _toppings;
 
   PizzaBuilder(this._diameter);
 
@@ -31,9 +31,9 @@ class PizzaBuilder {
 }
 
 class Pizza {
-  String _crust;
-  int _diameter;
-  Set<String> _toppings;
+  late String _crust;
+  late int _diameter;
+  late Set<String> _toppings;
 
   Pizza(PizzaBuilder builder) {
     _crust = builder.crust;

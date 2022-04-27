@@ -7,8 +7,8 @@ class Volume {
 }
 
 abstract class Vessel {
-  Volume volume;
-  String liquid;
+  late Volume volume;
+  late String liquid;
 }
 
 class Bucket extends Vessel {
