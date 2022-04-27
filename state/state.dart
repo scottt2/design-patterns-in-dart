@@ -9,7 +9,8 @@ class StatusOn implements State {
     context.state = StatusOff();
   }
 
-  @override String toString() {
+  @override
+  String toString() {
     return "on";
   }
 }
@@ -20,7 +21,8 @@ class StatusOff implements State {
     context.state = StatusOn();
   }
 
-  @override String toString() {
+  @override
+  String toString() {
     return "off";
   }
 }

@@ -21,7 +21,8 @@ class Coffee implements Beverage {
   final Set<Ingredient> _ingredients = {coffee, milk, sugar};
 
   @override
-  double get cost => _ingredients.fold(0, (total, ingredient) => total + ingredient.cost);
+  double get cost =>
+      _ingredients.fold(0, (total, ingredient) => total + ingredient.cost);
 
   @override
   String get ingredients {
@@ -38,10 +39,10 @@ class Coffee implements Beverage {
 
 class StarbucksCoffeeDecorator implements Beverage {
   final Beverage _coffee = Coffee();
-  
+
   @override
   double get cost => _coffee.cost * 5;
-  
+
   @override
   String get ingredients => _coffee.ingredients;
 }
@@ -51,7 +52,8 @@ void main() {
   var starbucksCoffee = StarbucksCoffeeDecorator();
 
   print("Coffee contains ${coffee.ingredients}. It costs \$${coffee.cost}");
-  print("Starbucks coffee contains ${starbucksCoffee.ingredients}. It costs \$${starbucksCoffee.cost}");
+  print(
+      "Starbucks coffee contains ${starbucksCoffee.ingredients}. It costs \$${starbucksCoffee.cost}");
 
   // Coffee contains coffee, milk, and sugar. It costs $0.85
   // Starbucks coffee contains coffee, milk, and sugar. It costs $4.25

@@ -27,8 +27,12 @@ class Body implements BodyPart {
 
   Body() {
     bodyParts = List.from([
-      Face(), Finger("Index Finger"), Finger("Thumb"),
-      Foot("Left Foot"), Foot("Right Foot"), Foot("Third Foot?")
+      Face(),
+      Finger("Index Finger"),
+      Finger("Thumb"),
+      Foot("Left Foot"),
+      Foot("Right Foot"),
+      Foot("Third Foot?")
     ]);
   }
 
@@ -43,19 +47,35 @@ class Body implements BodyPart {
 
 class BodyPartStitchVisitor implements BodyPartVisitor {
   void visit(BodyPart bodyPart) {
-    if (bodyPart is Body) { print("Reanimating my ${bodyPart.name}."); }
-    if (bodyPart is Face) { print("Stitching together my ${bodyPart.name}."); }
-    if (bodyPart is Finger) { print("Stitching together my ${bodyPart.name}."); }
-    if (bodyPart is Foot) { print("Gluing on my ${bodyPart.name}."); }
+    if (bodyPart is Body) {
+      print("Reanimating my ${bodyPart.name}.");
+    }
+    if (bodyPart is Face) {
+      print("Stitching together my ${bodyPart.name}.");
+    }
+    if (bodyPart is Finger) {
+      print("Stitching together my ${bodyPart.name}.");
+    }
+    if (bodyPart is Foot) {
+      print("Gluing on my ${bodyPart.name}.");
+    }
   }
 }
 
 class BodyPartProdVisitor implements BodyPartVisitor {
-void visit(BodyPart bodyPart) {
-    if (bodyPart is Body) { print("Poking my ${bodyPart.name} with an electrode."); }
-    if (bodyPart is Face) { print("Prodding ${bodyPart.name}."); }
-    if (bodyPart is Finger) { print("Pricking ${bodyPart.name}."); }
-    if (bodyPart is Foot) { print("Tickling ${bodyPart.name}."); }
+  void visit(BodyPart bodyPart) {
+    if (bodyPart is Body) {
+      print("Poking my ${bodyPart.name} with an electrode.");
+    }
+    if (bodyPart is Face) {
+      print("Prodding ${bodyPart.name}.");
+    }
+    if (bodyPart is Finger) {
+      print("Pricking ${bodyPart.name}.");
+    }
+    if (bodyPart is Foot) {
+      print("Tickling ${bodyPart.name}.");
+    }
   }
 }
 
@@ -81,4 +101,3 @@ void main() {
     Poking my Body with an electrode.
   */
 }
-

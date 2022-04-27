@@ -27,11 +27,12 @@ class Observable {
 
 class Observer {
   String name;
-  
+
   Observer(this.name);
 
   void notify(Notification notification) {
-    print("[${notification.timestamp.toIso8601String()}] Hey $name, ${notification.message}!");
+    print(
+        "[${notification.timestamp.toIso8601String()}] Hey $name, ${notification.message}!");
   }
 }
 
@@ -55,4 +56,3 @@ void main() {
     [2019-06-18T07:30:04.397518] Hey Kate, coffee's done!
   */
 }
-

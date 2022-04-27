@@ -22,7 +22,7 @@ abstract class Logger {
   void log(LogLevel level, String msg) {
     if (levels.contains(level) || universal) {
       write_message(msg);
-    } 
+    }
     _next?.log(level, msg);
   }
 
@@ -46,7 +46,8 @@ class FileLogger extends Logger {
 
 void main() {
   var logger = ConsoleLogger(Set.from(LogLevel.values));
-  var eLog = EmailLogger(Set.from([LogLevel.FunctionalMessage, LogLevel.FunctionalError]));
+  var eLog = EmailLogger(
+      Set.from([LogLevel.FunctionalMessage, LogLevel.FunctionalError]));
   var fLog = FileLogger(Set.from([LogLevel.Warning, LogLevel.Error]));
 
   logger.next = eLog;
@@ -74,4 +75,3 @@ void main() {
     [Email]: This is basically just info
   */
 }
-

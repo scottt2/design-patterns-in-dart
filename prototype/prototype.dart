@@ -54,10 +54,12 @@ void main() {
   print("cloneRect ${cloneRect.cloneStatus}.");
   print("someOtherRect ${someOtherRect.cloneStatus}.");
 
-  String cloneIsClone = ogRect == cloneRect ? "is a clone of" : "is not a clone of";
+  String cloneIsClone =
+      ogRect == cloneRect ? "is a clone of" : "is not a clone of";
   print("\r\ncloneRect $cloneIsClone ogRect.");
 
-  String someRectIsClone = ogRect == someOtherRect ? "is a clone of" : "is not a clone of";
+  String someRectIsClone =
+      ogRect == someOtherRect ? "is a clone of" : "is not a clone of";
   print("someOtherRect $someRectIsClone ogRect.");
 
   /*
@@ -69,4 +71,3 @@ void main() {
     someOtherRect is not a clone of ogRect.
   */
 }
-

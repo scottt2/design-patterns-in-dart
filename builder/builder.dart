@@ -20,7 +20,7 @@ class PizzaBuilder {
     _toppings = newToppings;
     _ensureCheese();
   }
- 
+
   void _ensureCheese() {
     _toppings.add("cheese");
   }
@@ -47,7 +47,8 @@ class Pizza {
   String _stringifiedToppings() {
     var stringToppings = _toppings.join(", ");
     var lastComma = stringToppings.lastIndexOf(",");
-    var replacement = ",".allMatches(stringToppings).length > 1 ? ", and" : " and";
+    var replacement =
+        ",".allMatches(stringToppings).length > 1 ? ", and" : " and";
 
     return stringToppings.replaceRange(lastComma, lastComma + 1, replacement);
   }
@@ -69,7 +70,8 @@ void main() {
   // Let's make a pizza!
   var plainPizza = Pizza(pizzaBuilder);
   print("Behold! $plainPizza.");
-  assert(plainPizza.toString() == "Behold! A delicous 8\" pizza with deep dish crust covered in pepperoni and cheese.");
+  assert(plainPizza.toString() ==
+      "Behold! A delicous 8\" pizza with deep dish crust covered in pepperoni and cheese.");
 
   // Now to adjust some things for the next pizza...
   pizzaBuilder.crust = "gold plated";
@@ -81,5 +83,6 @@ void main() {
   // Also note, we use the .build() function of the builder this time.
   var luxuriousPizza = pizzaBuilder.build();
   print("Wow! $luxuriousPizza? Someone is rich!");
-  assert(luxuriousPizza.toString() == "Wow! A delicous 72\" pizza with gold plated crust covered in anchovies, caviar, diamonds, and cheese? Someone is rich!");
+  assert(luxuriousPizza.toString() ==
+      "Wow! A delicous 72\" pizza with gold plated crust covered in anchovies, caviar, diamonds, and cheese? Someone is rich!");
 }

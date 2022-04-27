@@ -28,9 +28,11 @@ class CoffeeRoaster extends Factory {
 
 void main() {
   var roaster = CoffeeRoaster();
-  for (var i=0; i < 3; i++) {
+  for (var i = 0; i < 3; i++) {
     roaster.turnGasValve();
-    if (roaster.isTooHot) { roaster.loudspeaker = LoudspeakerWithAlarm(); }
+    if (roaster.isTooHot) {
+      roaster.loudspeaker = LoudspeakerWithAlarm();
+    }
   }
 
   /*
@@ -42,4 +44,3 @@ void main() {
     <BOO-OP BOO-OP> Temperature is now at 275 <BOO-OP>
   */
 }
-

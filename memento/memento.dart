@@ -71,4 +71,3 @@ void main() {
     [Originator] Set state to Going back to store for pickles
   */
 }
-

@@ -45,8 +45,8 @@ class MorningFacade {
     print("\r\nPreparing the coffee...");
     _coffeeGrinder.grind();
     _coffeeMaker
-        ..fill()
-        ..start();
+      ..fill()
+      ..start();
     print("Coffee is brewing!\r\n");
   }
 

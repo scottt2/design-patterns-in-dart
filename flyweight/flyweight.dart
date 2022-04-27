@@ -3,7 +3,9 @@ import "dart:collection";
 class Letter {
   String letter;
   Letter(String l) {
-    if (l.length != 1) { throw new Exception("Can only be a single letter"); }
+    if (l.length != 1) {
+      throw new Exception("Can only be a single letter");
+    }
     letter = l;
   }
 
@@ -23,7 +25,9 @@ class LetterFactory {
   Map<String, Letter> letters = {};
 
   Letter fetchLetter(String l) {
-    if (letters.containsKey(l)) { return letters[l]; }
+    if (letters.containsKey(l)) {
+      return letters[l];
+    }
     var letter = Letter(l);
     letters[l] = letter;
     return letter;
@@ -102,4 +106,3 @@ void main() {
     Letters created: 13.
   */
 }
-

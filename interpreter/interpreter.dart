@@ -41,4 +41,3 @@ void main() {
   assert(number.value == 42);
   print("And the result is ${number.value}!");
 }
-
