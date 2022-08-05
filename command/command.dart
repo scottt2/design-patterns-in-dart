@@ -3,8 +3,8 @@ abstract class Receiver {
 }
 
 abstract class Command {
-  Receiver receiver;
-  String name;
+  late Receiver receiver;
+  late String name;
 
   Command(this.receiver);
 
@@ -22,12 +22,13 @@ class Invoker {
   }
 
   @override
-  String toString() => history.fold("", (events, event) => events + "$event\r\n");
+  String toString() =>
+      history.fold("", (events, event) => events + "$event\r\n");
 }
 
 class TurnOffCommand extends Command {
   String name = "Turn off";
-  TurnOffCommand(Light light): super(light);
+  TurnOffCommand(Light light) : super(light);
   void execute() {
     (receiver as Light).turnOff();
   }
@@ -35,7 +36,7 @@ class TurnOffCommand extends Command {
 
 class TurnOnCommand extends Command {
   String name = "Turn on";
-  TurnOnCommand(Light light): super(light);
+  TurnOnCommand(Light light) : super(light);
   void execute() {
     (receiver as Light).turnOn();
   }
@@ -59,9 +60,11 @@ class LightSwitch {
     if (!light.actions.contains(action)) {
       return print("Uh...wait, wut?");
     }
-    switch(action) {
-      case "on": return _switch.execute(TurnOnCommand(light));
-      case "off": return _switch.execute(TurnOffCommand(light));
+    switch (action) {
+      case "on":
+        return _switch.execute(TurnOnCommand(light));
+      case "off":
+        return _switch.execute(TurnOffCommand(light));
     }
   }
 }
@@ -89,4 +92,3 @@ void main() {
     [2019-06-20 08:00:38.883702] Executed Turn on
   */
 }
-

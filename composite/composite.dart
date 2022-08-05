@@ -1,5 +1,5 @@
 abstract class Thing {
-  String name;
+  late String name;
   void doSomething();
 }
 
@@ -42,7 +42,7 @@ void main() {
 
   compositeChild1.addChild(leaf1_1);
   compositeChild1.addChild(leaf1_2);
-  
+
   compositeChild2.addChild(leaf2_1);
   compositeChild2.addChild(leaf2_2);
 

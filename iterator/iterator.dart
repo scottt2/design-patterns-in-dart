@@ -2,7 +2,15 @@
 // for details on Dart's Iterator class.
 
 class RainbowIterator implements Iterator {
-  var _colors = ["Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet"];
+  var _colors = [
+    "Red",
+    "Orange",
+    "Yellow",
+    "Green",
+    "Blue",
+    "Indigo",
+    "Violet"
+  ];
   var _index = 0;
   String get current => _colors[_index++];
   bool moveNext() => _index < _colors.length;
@@ -10,7 +18,7 @@ class RainbowIterator implements Iterator {
 
 void main() {
   var rainbowColors = RainbowIterator();
-  while(rainbowColors.moveNext()) {
+  while (rainbowColors.moveNext()) {
     print(rainbowColors.current);
   }
 
@@ -24,4 +32,3 @@ void main() {
     Violet
   */
 }
-

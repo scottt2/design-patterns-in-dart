@@ -7,7 +7,7 @@ class Me {
   }
 
   static String get name => _name;
- 
+
   @override
   String toString() => "Hello, my name is $name.";
 
@@ -17,7 +17,7 @@ class Me {
 void main() {
   var tyler = Me();
   var anotherTyler = Me();
-  
+
   print(tyler);
   print(anotherTyler);
 

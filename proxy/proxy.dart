@@ -3,7 +3,7 @@ abstract class Subject {
 }
 
 class ExpensiveClass implements Subject {
-  String name;
+  late String name;
 
   ExpensiveClass(this.name);
 
@@ -13,8 +13,8 @@ class ExpensiveClass implements Subject {
 }
 
 class Proxy implements Subject {
-  String _name;
-  ExpensiveClass _sub;
+  late String _name;
+  late ExpensiveClass _sub;
 
   Proxy(this._name);
 
@@ -24,7 +24,6 @@ class Proxy implements Subject {
   }
 
   ExpensiveClass _subject() {
-    if (_sub != null) return _sub;
     print("Creating an instance of ExpensiveClass for the proxy...");
     _sub = ExpensiveClass(_name);
     return _sub;
@@ -35,7 +34,8 @@ void main() {
   var proxy = Proxy("yay");
   print("With our handy proxy, we call someMethod...\r\n");
   proxy.someMethod();
-  print("\r\nNotice that the proxy did not have an instance of ExpensiveClass, so it made one when required.");
+  print(
+      "\r\nNotice that the proxy did not have an instance of ExpensiveClass, so it made one when required.");
   print("Now if we call someMethod again...\r\n");
   proxy.someMethod();
   print("\r\nWe reuse the instance we made above!");

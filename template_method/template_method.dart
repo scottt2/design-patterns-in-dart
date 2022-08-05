@@ -30,4 +30,3 @@ void main() {
     I'm an overriden hook method!
   */
 }
-

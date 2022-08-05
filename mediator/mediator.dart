@@ -1,5 +1,5 @@
 abstract class Stateful {
-  String _state;
+  late String _state;
   String get state => _state;
   void set state(String newState) => _state = newState;
 }
@@ -38,4 +38,3 @@ void main() {
     I prefer not to disclose my name heard "Do NOT eat the shrip tacos!".
   */
 }
-

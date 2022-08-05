@@ -11,7 +11,8 @@ class DripStrategy implements CoffeeStrategy {
 }
 
 class MochaFrappuccinoStrategy implements CoffeeStrategy {
-  String announce(String roast) => "a delicious mocha frappuccion with $roast beans";
+  String announce(String roast) =>
+      "a delicious mocha frappuccion with $roast beans";
 }
 
 class CoffeeDrinker {
@@ -47,4 +48,3 @@ void main() {
     I'm enjoying a delicious mocha frappuccion with Italian beans!
   */
 }
-

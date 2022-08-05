@@ -1,5 +1,5 @@
 abstract class Expression {
-  Number number;
+  late Number number;
   void interpret(int value);
 }
 
@@ -22,7 +22,7 @@ class Subtract implements Expression {
 }
 
 class Number {
-  int value;
+  late int value;
   Number(int value) {
     print("Starting with $value...");
     this.value = value;
@@ -41,4 +41,3 @@ void main() {
   assert(number.value == 42);
   print("And the result is ${number.value}!");
 }
-

@@ -1,6 +1,6 @@
 class Notification {
-  String message;
-  DateTime timestamp;
+  late String message;
+  late DateTime timestamp;
   Notification(this.message, this.timestamp);
   Notification.forNow(this.message) {
     timestamp = new DateTime.now();
@@ -8,9 +8,9 @@ class Notification {
 }
 
 class Observable {
-  List<Observer> _observers;
+  late List<Observer> _observers;
 
-  Observable([List<Observer> observers]) {
+  Observable([List<Observer>? observers]) {
     _observers = observers ?? [];
   }
 
@@ -26,17 +26,18 @@ class Observable {
 }
 
 class Observer {
-  String name;
-  
+  late String name;
+
   Observer(this.name);
 
   void notify(Notification notification) {
-    print("[${notification.timestamp.toIso8601String()}] Hey $name, ${notification.message}!");
+    print(
+        "[${notification.timestamp.toIso8601String()}] Hey $name, ${notification.message}!");
   }
 }
 
 class CoffeeMaker extends Observable {
-  CoffeeMaker([List<Observer> observers]) : super(observers);
+  CoffeeMaker([List<Observer>? observers]) : super(observers);
   void brew() {
     print("Brewing the coffee...");
     notify_observers(Notification.forNow("coffee's done"));
@@ -55,4 +56,3 @@ void main() {
     [2019-06-18T07:30:04.397518] Hey Kate, coffee's done!
   */
 }
-
