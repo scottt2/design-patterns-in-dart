@@ -38,18 +38,20 @@ class Coffee implements Beverage {
 }
 
 class StarbucksCoffeeDecorator implements Beverage {
-  final Beverage _coffee = Coffee();
+  final Beverage _beverage;
+
+  StarbucksCoffeeDecorator(this._beverage);
 
   @override
-  double get cost => _coffee.cost * 5;
+  double get cost => _beverage.cost * 5;
 
   @override
-  String get ingredients => _coffee.ingredients;
+  String get ingredients => _beverage.ingredients;
 }
 
 void main() {
   var coffee = Coffee();
-  var starbucksCoffee = StarbucksCoffeeDecorator();
+  var starbucksCoffee = StarbucksCoffeeDecorator(coffee);
 
   print("Coffee contains ${coffee.ingredients}. It costs \$${coffee.cost}");
   print(
