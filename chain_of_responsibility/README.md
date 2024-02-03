@@ -26,7 +26,7 @@ enum LogLevel {
 
 abstract class Logger {
   Set<LogLevel> levels;
-  Logger _next;
+  Logger? _next;
 
   Logger(this.levels);
 
